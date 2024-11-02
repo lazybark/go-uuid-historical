@@ -9,7 +9,7 @@ It also has a CLI tool that can be used to generate UUIDs from a list of timesta
 **Features**
 
 * UUID v7 Compatibility: Implements the draft specification for UUID version 7, creating time-ordered, unique 128-bit identifiers.
-* Timestamp-Based Generation: Uses current or specified timestamps, ensuring uniqueness at up to 10,000 UUIDs per second.
+* Timestamp-Based Generation: Uses current or specified timestamps, ensuring uniqueness at up to 10,000 UUIDs per second (in theory you can get more without collisions, but there's no sequence counter for now, so chances of collisions are **pretty high**).
 * Simple API: Flexible generation options, supporting standard timestamp-based UUIDs and custom timestamps.
 
 
